@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "batch_face_cropper"
+version = "0.1.0"
+description = ""
+authors = ["Mamoru Miura <mamo3gr@gmail.com>"]
+license = "Apache License 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mtcnn = "*"
+opencv-python = "^4.1.0"
+tensorflow = "2.1.0"
+keras = "2.3.1"
+
+[tool.poetry.dev-dependencies]
+black = {version = "*", allow-prereleases = true}
+flake8 = "*"
+isort = {extras = ["pyproject"], version = "*"}
+mypy = "*"
+pytest = "*"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
